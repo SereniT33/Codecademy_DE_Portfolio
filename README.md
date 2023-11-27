@@ -14,7 +14,7 @@ A fictional subscription-based company  `Cademycode` has a database of long-term
 
 # Process
 
-## Data Exploration & Tranformation ([Writeup in Jupyter Notebook])(https://github.com/SereniT33/codecademy_automate_pipeline/blob/main/pipeline_writeup.ipynb)
+## Data Exploration & Tranformation - [Writeup in Jupyter Notebook](https://github.com/SereniT33/codecademy_automate_pipeline/blob/main/pipeline_writeup.ipynb)
 Upon exploration, the raw data tables have gone through the following tranformations:
 1. Changing the student's date of birth as a datatime object and creating age column;
 2. Exploding the dictonary that contains student's cotact information to flat columns;
