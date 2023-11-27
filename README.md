@@ -1,5 +1,5 @@
 # Codecademy Portfolio: Automate Pipeline
-This repository contains the portfolio project as a part of the [Codecademy DE certification].(https://www.codecademy.com/learn/paths/data-engineer)
+This repository contains the portfolio project as a part of the [Codecademy DE certification](https://www.codecademy.com/learn/paths/data-engineer)
 
 # Project Description
 This project builds a semi-automated bash+python pipeline to transform a SQLite Database into a clean source.
