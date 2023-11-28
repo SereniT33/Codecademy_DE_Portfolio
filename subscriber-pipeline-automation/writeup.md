@@ -3,7 +3,8 @@ This repository contains the portfolio project as a part of the [Codecademy DE c
 
 # Project Description
 This project builds a semi-automated bash+python pipeline to transform a SQLite Database into a clean source.
-The final product aims to do the following:
+
+The final product:
 - performs unit tests to confirm data validity
 - raises errors to an error log
 - automatically checks and updates changelogs
