@@ -5,7 +5,7 @@ This repository contains data enginnering potfolio projects from Codecademy. You
 ## Projects
 ### bike-rental-data-management
 
-### subscriber-pipeline-automation ([Writeup](https://github.com/SereniT33/Codecademy_DE_Portfolio/blob/main/subscriber-pipeline-automation/writeups/final_writeup.md))
+### subscriber-pipeline-automation ([Writeup](https://github.com/SereniT33/Codecademy_DE_Portfolio/blob/main/subscriber-pipeline-automation/README.md))
 This project builds a semi-automated bash+python data pipeline to transform a mock SQLite Database into a clean source. 
 
 The final pipeline:
