@@ -7,7 +7,12 @@ A bike rental company wants a database for their analysts to understand the effe
 
 # Process
 
-## 
+## Data Exploration & Transformation - [Writeup in Jupyter Notebook] ()
 
 
-## 
+## Developing a Relational Database 
+
+### Database Schema
+![alt txt](data_schema.png)
+
+## Developing Views
