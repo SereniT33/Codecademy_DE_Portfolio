@@ -5,6 +5,9 @@ This project creates a PostgreSQL database with analtycis-ready views connecting
 - implementing the database in PostgresQL and inserting the datasets
 - creating analytics-ready views 
 
+## Database Schema
+![alt txt](data_schema.png)
+
 ## Scenario
 A bike rental company wants a database for their analysts to understand the effects of weather on bike rentals. This database will contain a year of bike rental data provided by the company as well as the weather data sourced from the airport. As a data engineer, my goal is to clean and validate both data sets, design a relational PostgreSQL database, and develop views for the database to assist the analytics team. 
 
@@ -30,9 +33,6 @@ A PostgreSQL Database is created using Postbird and updated on the Jupyter noteb
 2. Trips;
 3. Users;
 4. Stations;
-
-### Database Schema
-![alt txt](data_schema.png)
 
 ## Developing Views
 Finally, the view tables were created to help analysts. 
