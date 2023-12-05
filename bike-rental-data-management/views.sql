@@ -67,20 +67,18 @@ ORDER BY dates.month;
 
 --- create a view to highlight the trips that went beyond the valid duration
 CREATE VIEW late_return AS
-SELECT dates.date
-    , trips.id
-    , trips.trip_duration
-    , trips.bike_id
-    , [( SELECT stations.name
-          FROM stations
-         WHERE trips.start_station_id = stations.id)] AS start_location
-    , [( SELECT stations.name
-          FROM stations
-         WHERE trips.end_station_id = stations.id)] AS end_location
-    , users.user_type
+SELECT
+    dates.date,
+    trips.id,
+    trips.trip_duration,
+    trips.bike_id,
+    start_stations.name AS start_location,
+    end_stations.name AS end_location,
+    users.user_type
 FROM trips
 JOIN dates ON trips.date_key = dates.date_key
-JOIN users ON trips.user_id = users.id
-WHERE trips.exceed_trip_duration = True; 
-
-
+LEFT JOIN users ON trips.user_id = users.id
+LEFT JOIN stations AS start_stations ON trips.start_station_id = start_stations.id
+LEFT JOIN stations AS end_stations ON trips.end_station_id = end_stations.id
+WHERE
+    trips.exceed_trip_duration = True;
