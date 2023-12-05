@@ -13,7 +13,7 @@ SELECT dates.date_key
     , COUNT(trips.exceed_trip_duration) FILTER (where trips.exceed_trip_duration=True) AS late_return
 FROM trips
 RIGHT JOIN dates ON trips.date_key = dates.date_key
-LEFT JOIN users ON trips.id = users.trip_id
+LEFT JOIN users ON trips.user_id = users.id
 GROUP BY dates.date_key
 ORDER BY dates.date_key;
 
@@ -80,5 +80,7 @@ SELECT dates.date
     , users.user_type
 FROM trips
 JOIN dates ON trips.date_key = dates.date_key
-JOIN users ON trips.id = users.trip_id
+JOIN users ON trips.user_id = users.id
 WHERE trips.exceed_trip_duration = True; 
+
+
