@@ -1,6 +1,6 @@
 # Project Description
 This project creates a PostgreSQL database with analtycis-ready views connecting bike rental and weather datasets. This project involves:
-- exploring and clenaing both datasets
+- exploring and cleaning both datasets
 - developing a relational database schema
 - implementing the database in PostgresQL and inserting the datasets
 - creating analytics-ready views 
